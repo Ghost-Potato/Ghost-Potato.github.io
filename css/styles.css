@@ -1,0 +1,19 @@
+@charset "UTF-8";
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+body h2 button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:20px;
+}
+#story{
+    text-align: center;
+    display: block;
+    padding: 5px;
+    border-width: 3px;
+    border-color: black;
+    border-style: dashed;
+}
