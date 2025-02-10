@@ -38,7 +38,7 @@ function changeRgb(channel, value) {
       rgb[2] = value;
     //no default, as it seems irrelevant for this scenario
   }
-  return newRgb;
+  return rgb;
 }
 // STEP 2: Build a switch based on the value of the channel
 //parameter (red, green, or blue) (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
