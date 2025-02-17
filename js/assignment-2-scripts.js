@@ -40,24 +40,26 @@ function changeCustomColor() {
 }
 
 // function to change bg color from random no.
-function changeRandomColor(number) {
-    //creating the random number
-    var randomNum = Math.floor(Math.random()*(number + 1)); //randomizes and rounds to the nearest integer
-    changeCustomColor(randomNum);
-    return randomNum;
+function changeRandomColor() {
+  //creating the random number
+  var randomNum = Math.floor(Math.random() * 101); //randomizes and rounds to the nearest integer
+  num.value = randomNum;
+  changeCustomColor();
 }
 
 // function to generate options for select list
 function addList() {
   // Tip: you might have to check length condition so that the list does not keep growing when clicked
+  //list = [0-4]
+  var imgList = ["img/img1.jpg", "img/img2.jpg", "img/img3.jpg", "img/img4.jpg", "img/img5.jpg"];
   // Tip: use createElement and appendChild inside every for loop to add elements to select list from array
 }
 
 // function to change image
-function changeImage() {}
+function changeImage() {
+}
 
-// event listeners for on click event of buttons and select
+// event listeners for on change event of select
 custBtn.onclick = changeCustomColor;
 randBtn.onclick = changeRandomColor;
 
-// event listeners for on change event of select

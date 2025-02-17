@@ -1,0 +1,17 @@
+@charset "UTF-8";
+html{scroll-behavior: smooth;}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-image: radial-gradient(cornflowerblue, lightgrey);
+    border-radius: 25%;
+}
+p{
+    text-decoration: underline;
+    font-weight: bold;
+}
