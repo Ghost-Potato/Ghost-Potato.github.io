@@ -8,6 +8,9 @@ body{
     background-color: burlywood;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+header nav menu li{
+    list-decoration: none;
+}
 h1{
     text-decoration: underline;
 }
