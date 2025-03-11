@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    text-align: center;
+    background-color: burlywood;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-decoration: underline;
+}
+p {
+    font-size: large;
+    font-weight: bold;
+}
