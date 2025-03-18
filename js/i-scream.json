@@ -1,43 +1,43 @@
 {
-    "companyName" : "I-Scream Company Inc.",
-    "headOffice" : "Ontario, Canada",
-    "established" : 1986,
-    "active" : true,
-    "topFlavours" : [
-    {
-        "name" : "Chocolate Mint",
-        "calories" : 290,
-        "type" : "ice cream",
-        "ingredients" : ["cocoa powder", "mint", "cream"],
-        "image" : "https://ghost-potato.github.io/img/chocolate-mint.svg"
-    }, 
-    {
-        "name" : "Peach Mango",
-        "calories" : 240,
-        "type" : "sorbet",
-        "ingredients" : ["peach puree", "mango puree", "ice"],
-        "image" : "https://ghost-potato.github.io/img/peach-mango.svg"
-    },
-    {
-        "name" : "Strawberry Sprinkle",
-        "calories" : 300,
-        "type" : "ice cream",
-        "ingredients" : ["strawberry puree", "sprinkles", "cream"],
-        "image" : "https://ghost-potato.github.io/img/strawberry-sprinkle.svg"
-    },
-    {
-        "name" : "Cookie Dough",
-        "calories" : 330,
-        "type" : "ice cream",
-        "ingredients" : ["vanilla base", "chocolate chips", "cookie dough chunks"],
-        "image" : "https://ghost-potato.github.io/img/ice-cream-xtra2.svg"
-    },
-    {
-        "name" : "Green Tea",
-        "calories" : 240,
-        "type" : "ice cream",
-        "ingredients" : ["vanilla base", "green tea flavour", "green colouring"],
-        "image" : "https://ghost-potato.github.io/img/ice-cream-xtra1.svg"
-    }
+    "companyName": "I-Scream Company Inc.",
+    "headOffice": "Ontario, Canada",
+    "established": 1986,
+    "active": true,
+    "topFlavours": [
+        {
+            "name": "Chocolate Mint",
+            "calories": 290,
+            "type": "ice cream",
+            "ingredients": ["cocoa powder", "mint", "cream"],
+            "image": "https://ghost-potato.github.io/img/chocolate-mint.svg"
+        },
+        {
+            "name": "Peach Mango",
+            "calories": 240,
+            "type": "sorbet",
+            "ingredients": ["peach puree", "mango puree", "ice"],
+            "image": "https://ghost-potato.github.io/img/peach-mango.svg"
+        },
+        {
+            "name": "Strawberry Sprinkle",
+            "calories": 300,
+            "type": "ice cream",
+            "ingredients": ["strawberry puree", "sprinkles", "cream"],
+            "image": "https://ghost-potato.github.io/img/strawberry-sprinkle.svg"
+        },
+        {
+            "name": "Cookie Dough",
+            "calories": 330,
+            "type": "ice cream",
+            "ingredients": ["vanilla base", "chocolate chips", "cookie dough chunks"],
+            "image": "https://ghost-potato.github.io/img/ice-cream-xtra2.svg"
+        },
+        {
+            "name": "Green Tea",
+            "calories": 240,
+            "type": "ice cream",
+            "ingredients": ["vanilla base", "green tea flavour", "green colouring"],
+            "image": "https://ghost-potato.github.io/img/ice-cream-xtra1.svg"
+        }
     ]
 }
