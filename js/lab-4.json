@@ -1,0 +1,44 @@
+{
+    "companyName" : "I-Scream Company Inc.",
+    "headOffice" : "Ontario, Canada",
+    "established" : 1986,
+    "active" : true,
+    "topFlavours" : [
+    {
+        "name" : "Chocolate Mint",
+        "calories" : 290,
+        "type" : "iced cream",
+        "ingredients" : ["cocoa powder", "mint", "cream"],
+        "image" : "live link to GitHub"
+    }, 
+    {
+        "name" : "Peach Mango",
+        "calories" : 240,
+        "type" : "sorbet",
+        "ingredients" : ["peach puree", "mango puree", "ice"],
+        "image" : "live link to GitHub"
+    },
+    {
+        "name" : "Strawberry Sprinkle",
+        "calories" : 300,
+        "type" : "iced cream",
+        "ingredients" : ["strawberry puree", "sprinkles", "cream"],
+        "image" : "live link to GitHub"
+    },
+    {
+        "name" : "Cookie Dough",
+        "calories" : 330,
+        "type" : "iced cream",
+        "ingredients" : ["vanilla base", "chocolate chips", "cookie dough chunks"],
+        "image" : "live link to GitHub"
+    },
+    {
+        "name" : "Green Tea",
+        "calories" : 240,
+        "type" : "iced cream",
+        "ingredients" : ["vanilla base", "green tea flavour", "green colouring"],
+        "image" : "live link to GitHub"
+    }
+]
+
+}
