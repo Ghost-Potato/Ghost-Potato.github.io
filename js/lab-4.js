@@ -15,7 +15,7 @@ async function populate() {
   // STEP 4a: Create i-scream.json file with companyName, headOffice, established, active, topFlavors(name, calories, type, ingredients, image) */
   // STEP 4b: Store the URL of a JSON file in a variable */
 
-  const url = "https://ghost-potato.github.io/js/lab-4.js";
+  const url = "https://ghost-potato.github.io/js/i-scream.json";
 
   // STEP 5: Use the new URL to create a new request object
 
