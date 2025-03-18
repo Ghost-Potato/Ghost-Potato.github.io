@@ -29,7 +29,7 @@ async function populate() {
 
   // STEP 7: Capture the returned Response object and covert to a JSON object using json()
 
-  const responseJson = response.json; //variable.json
+  const responseJson = await response.json(); //variable.json
 
   // STEP 8: Output the iScream JSON object to the console
 
@@ -38,7 +38,7 @@ async function populate() {
   // STEP 9a: Invoke the populateHeader function here, then build it below
   populateHeader(responseJson);
   // STEP 10a: Invoke the showTopFlavors function here, then build it below
-  showTopFlavours();
+  showTopFlavours(responseJson);
 }
 
 // STEP 3b: Call the populate() function
