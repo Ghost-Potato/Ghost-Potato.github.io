@@ -100,8 +100,8 @@ function showTopFlavours(jsonBody) {
     }
     // STEP 10i: Append each complete ARTICLE element to the SECTION element
     article.appendChild(h2);
-    article.appendChild(h2);
-    article.appendChild(h2);
+    article.appendChild(p1);
+    article.appendChild(p2);
     article.appendChild(list);
     article.appendChild(image);
 
