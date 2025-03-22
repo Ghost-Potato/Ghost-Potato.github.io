@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Maker</title>
+  <link rel="stylesheet" href="css/assignment-3-styles.css">
+  <script src="js/assignment-3-scripts.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <img src="./images/pizza-logo.jpg" alt="pizza logo">
+    </div>
+    <h1>Pizza Time</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Build Your Own Pizza</h2>
+      <p>Please use the form below to build your own pizza. Note: for some choices, you can only choose one option.</p>
+      <form class="pizza-form" action="assignment-3.html" method="post">
+        <fieldset>
+          <!--select/options for the crust, sauce, and cheese. No multi options for those 3.-->
+          <label for="pizza-crust">Select Your Crust:</label>
+          <select name="pizza-crust" id="pizza-crust">
+            <option value="regular">Regular</option>
+            <option value="thin">Thin</option>
+            <option value="thick">Thick</option>
+            <option value="deep-dish">Chicago Deep Dish</option>
+            <option value="new-york">New York Style</option>
+            <option value="cauliflower">Cauliflower Crust</option>
+            <option value="no-gluten">Gluten Free</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="pizza-sauce">Select Your Sauce:</label>
+          <select name="pizza-sauce" id="pizza-sauce">
+            <option value="reg-tomato">Regular Tomato</option>
+            <option value="light-tomato">Light Tomato</option>
+            <option value="extra-tomato">Extra Tomato</option>
+            <option value="pesto">Pesto</option>
+            <option value="alfredo">Alfredo</option>
+            <option value="buffalo">Buffalo</option>
+            <option value="no-sauce">None</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="pizza-cheese">Select Your Cheese:</label>
+          <select name="pizza-cheese" id="pizza-cheese">
+            <option value="regular">Regular</option>
+            <option value="three-cheese">Three Cheese</option>
+            <option value="cheddar">Cheddar</option>
+            <option value="gorgonzola">Gorgonzola</option>
+            <option value="american-cheese">American Cheese</option>
+            <option value="mozzarella">Mozzarella</option>
+            <option value="blue-cheese">Blue Cheese</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <!--checkboxes for the toppings so they can have multiple toppings-->
+          <h4>Select Your Toppings:</h4>
+          <br>
+          <h5>Meat Toppings:</h5>
+          <input type="checkbox" id="pepperoni" name="meat" value="pepperoni">
+          <label for="pepperoni">Pepperoni</label>
+          <input type="checkbox" id="sausage" name="meat" value="sausage">
+          <label for="sausage">Sausage</label>
+          <input type="checkbox" id="ham" name="meat" value="ham">
+          <label for="ham">Ham</label>
+          <input type="checkbox" id="anchovies" name="meat" value="anchovies">
+          <label for="anchovies">Anchovies</label>
+          <input type="checkbox" id="chicken" name="meat" value="chicken">
+          <label for="chicken">Chicken</label>
+          <input type="checkbox" id="meatballs" name="meat" value="meatballs">
+          <label for="meatballs">Meatballs</label>
+          <br>
+          <h5>Veggie Toppings:</h5>
+          <input type="checkbox" id="olives" name="veggie" value="olives">
+          <label for="olives">Olives</label>
+          <input type="checkbox" id="tomatoes" name="veggie" value="tomatoes">
+          <label for="tomatoes">Tomatoes</label>
+          <input type="checkbox" id="spinach" name="veggie" value="spinach">
+          <label for="spinach">Spinach</label>
+          <input type="checkbox" id="artichokes" name="veggie" value="artichokes">
+          <label for="artichokes">Artichokes</label>
+          <input type="checkbox" id="onion" name="veggie" value="onion">
+          <label for="onion">Onion</label>
+          <input type="checkbox" id="broccoli" name="veggie" value="broccoli">
+          <label for="broccoli">Broccoli</label>
+          <br>
+          <h5>Select Extras:</h5>
+          <input type="checkbox" id="extra-cheese" name="extra" value="extra-cheese">
+          <label for="cheese-extra">Cheese</label>
+          <input type="checkbox" id="extra-meat" name="extra" value="extra-meat">
+          <label for="meat-extra">Meat</label>
+          <input type="checkbox" id="extra-veg" name="extra" value="extra-veg">
+          <label for="veg-extra">Veggies</label>
+          <input type="checkbox" id="extra-sauce" name="extra" value="sauce">
+          <label for="extra-sauce">Sauce</label>
+          <input type="checkbox" id="garlic-spice" name="extra" value="garlic-spice">
+          <label for="garlic-spice">Garlic Spiced Crust</label>
+          <input type="checkbox" id="pepper-flakes" name="extra" value="pepper-flakes">
+          <label for="pepper-flakes">Pepper-Flakes</label>
+          <br><button id="order">Place Order</button>
+        </fieldset>
+      </form>
+    </section>
+    <div>
+      <h3>Your Order Summary:</h3>
+      <!--selections will display here after the place order button is clicked-->
+      <p id="order-readout"></p>
+    </div>
+  </main>
+  <footer>
+    <a href="assignment-3.html">Home</a>
+    <button id="about">About</button>
+    <!--pop-up name and student number when they hit About-->
+  </footer>
+</body>
+
+</html>

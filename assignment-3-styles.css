@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-height: 100%; /*make sure it takes up the entire page*/
+    height: 100%;
+    margin: 0; /* Ensure no default margin */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column; /*column so everything flows vertically*/
+    background: linear-gradient(#AA4C39 25%, #D47D6A 50%, #FFB9AA);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex; /*flex for growth if necessary*/
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+header h1 {
+    margin: auto; /*centering the header*/
+}
+
+header div img {
+    position: absolute; /* Use absolute positioning for the image to keep it out of the flow of content */
+    height: 150px;
+    width: auto;
+    top: 10px;
+    right: 10px;
+}
+
+main {
+    flex: 1; /* flex 1 so the main can grow dynamically*/
+    padding: 20px; /* some padding to make it look a little nicer*/
+}
+fieldset {
+    text-align: left; /*want all the text to flow from left to right*/
+    border-style: none;
+}
+fieldset h4{
+    padding: 0; /*for this and below: to keep the headings close together*/
+    margin: 0;
+}
+fieldset h5{
+    padding: 0;
+    margin: 5px;
+}
+fieldset input {
+    display: inline-block;
+}
+footer {
+    height: 2.5rem;
+    width: 100%;
+    text-align: center; /* centering footer text */
+}
