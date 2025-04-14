@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/assignment-4.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>NASA Astronomical Picture of the Day(APOD) API Tutorial</h1>
+            </header>
+            <section class="instructions">
+                <!--including target="_blank" and rel="noreferrer noopener" to open in a new tab and for security to prevent phishing attacks from https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/-->
+                <h3>Step 1: Obtain an API Key from the official NASA API website</h2>
+                <p>The first thing you need to do is go to the NASA API website and get a key. You will have to enter your email to receive the key, so make sure to check your spam folder if you do not receive one within a few minutes. You can <a href="https://api.nasa.gov/" target="_blank" rel="noreferrer noopener">get a key</a> here.</p>
+                <h3>Step 2: Select the API you want to use</h3>
+                <p>NASA has a variety of APIs to choose from! For this example, we will be using the NASA Astronomical Picture of the Day or APOD API. Each API has its own <a href=https://github.com/nasa/apod-api target="_blank" rel="noreferrer noopener">GitHub</a> page with up to date documentation. There are also <a href="https://liderrick.github.io/apodHowTo/index.html" target="_blank" rel="noreferrer noopener">many</a> <a href="https://dev.to/msdeshmukh009/how-to-use-nasa-s-apod-api-2iec" target="_blank" rel="noreferrer noopener">tutorials</a>  <a href="https://www.geeksforgeeks.org/how-to-get-data-from-nasa-federal-agencies-using-the-nasa-public-apis/" target="_blank" rel="noreferrer noopener">online</a> that go into more depth if you are struggling with the NASA Docs.</p>
+                <h3>Step 3: Create your HTML page</h3>
+                <p>For the APOD API, you need to include something that allows the user to pick a date in YYYY-MM-DD format. No date before 1995-05-16 will work as that was the first date an APOD was posted. Future dates will not work as time travel does not exist yet, so in your JavaScript make sure to exclude those.</p>
+                <h3>Step 4: Apply Some Style</h3>
+                <p>For this part, the styling is entirely up to you. Have fun with it! <a href="https://portalcss.gsfc.nasa.gov/templates/style.css" target="_blank" rel="noreferrer noopener">This link </a> will take you to the official CSS for the NASA Goddard Space Flight Center webpage.</p>
+                <h3>Step 5: JavaScript Time</h3>
+                <p>This is the longest portion of the tutorial. This will cover how to connect to the API, how to make requests and then receive the response, how to display the response components: image or video (depends on the media for that day), title, date uploaded, explanation, and copyright (if the media is not in the public domain).</p>
+                <h3>Step 5a: Link the API</h3>
+                <p>To connect to the API, you need to assign the API url and the API key to variables. Once this is complete, create a new function to fetch the results from the API. 
+                For my fetchResults(), I created two new constants: selectedDate and url. SelectedDate will store the date input value and the url will store the baseURL, apiKey, and the selectedDate as the full url. SelectedDate is in use because the date pulled from the website is important to the display of the final picture. 
+                Next, use a try catch to run the fetch and then catch any error that might pop up. The fetch will use the new url variable as the argument and then collect the response, convert the response to json, then use the next function, displayPictures to display all the images and the information from the image.
+                </p>
+                <h3>Step 5b: Display the Results</h3>
+                <p>For the next function, displayPictures, the argument is the json from the fetchResults function. Included in this function are multiple if/else ladders to check whether the media type is an image, then if the image has a regular url or a hdurl. Depending on the image type, the function will create a new image element with the appropriate src path. They also check if the media is a video. If it is, the function will create an iframe element and apply the correct path for the video. 
+                Once those are done, the function will grab the title, date, and explanation from the json file and display them as figure captions. The last if/else ladder in this function checks if the media has a copyright value. If it does, it display the value as a caption and if it doesn't, it displays nothing.</p>
+                <h3>Test!</h3>
+                <p>Please use the date input below and test the APOD API to your heart's content!</p>
+            </section>
+            <section class="apod">
+                <form>
+                    <label for="date-input">Select a date:</label>
+                        <input type="date" id="date-input" name="date-input" min="1995-05-16">
+                </form>
+            </section>
+            <section id="media">
+                <figure>
+                    <!--create new image element if the response is an image (based on the nasa apod readme)-->
+                    <!--create new iframe element if the response is a video for that day-->
+                    <figcaption id="title"></figcaption>
+                </figure>
+                <figcaption id="date"></figcaption>
+                <figcaption id="explanation"></figcaption>
+                <small id="copyright"></small>
+            </section>
+        </main>
+        <footer>
+            <p id="student"></p>
+        </footer>
+    </body>
+</html>
